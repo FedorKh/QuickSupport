@@ -1,0 +1,73 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-md-9">
+            <div class="panel panel-primary">
+                <div class="panel-heading"><h2>Что такое триггер и как он рассчитывается</h2></div>
+                <div class="panel-body">
+                    <p> <b>TRIGGER</b> – инструмент для пересчета плана и % бонуса части команды по показателю объем продаж.</p>
+                    <p> <b>Задача триггера</b> - снизить негативное влияние внешних факторов на недовыполнение цели по объему продаж.</p>
+                    <p> На ежемесячной основе BU Президент принимает решение о включении триггера. </p>
+                    <p> <b>К кому применим триггер</b> <span class="showList">(Показать): </span></p>
+                    <div class="non-visible">
+                     <ul class="answer">
+                      <li> только по цели объем продаж ( прямое, пр+непр, третичные);</li>
+                      <li> если М3 выполнил цель по объему продаж  менее 95%;</li>
+                      <li> для сотрудников М1/М2 (команды данного М3);</li>
+                      <li> если М1/М2 выполнил цель по объему продаж менее 100%;</li>
+                     </ul>
+                     <button type="button" class="btn btn-primary btn-md changeVisibilityList">Скрыть</button>
+                    </div>
+                    <p> <b>Как рассчитать триггер:</b></p>
+                    <p class="formula"> Если М3 выполнил объем продаж  < 95% =  100% - % выполнения М3 = % триггер</p>
+                    <p> <b>% триггера</b> уменьшает план по объему продаж  и , исходя из нового <b>% выполнения</b> рассчитывается <b>% бонуса</b>, 
+который уменьшается на <b>% триггера</b></p>
+                    <p> Пример <span class="showImage">(Показать):</span></p>
+                    <div class="thumb non-visible">
+                      <a class="fancyimage" href="images/3.6.7.jpg">
+                       <img class="img-responsive" src="images/3.6.7.jpg" style="width: 50%;margin: auto;">
+                      </a>
+                      <button type="button" class="btn btn-primary btn-md changeVisibility">Скрыть</button>
+                    </div>
+                    <a href="#skip_6_7" class="btn btn-success btn-md" role="button" id="top">Bверх</a>
+                </div>
+                <div class="panel-footer">
+                    <h3>Ответственный: <span>SSDS Team</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  $(document).ready(function() {
+
+        $("a.fancyimage").fancybox();
+        var toTop = document.getElementById("top");
+        toTop.addEventListener("click", function(){
+            window.scrollTo(0,0);
+        });
+
+        
+        $(".showImage").click(function(){
+            var spanEl = $(this).parent().next();
+            spanEl.slideDown(1500);
+            $(this).addClass("disabledLink");
+        });
+
+           $(".showList").click(function(){
+            var spanEl = $(this).parent().next();
+            spanEl.slideDown(1500);
+            $(this).addClass("disabledLink");
+        });
+        
+        $(".changeVisibility").click(function(){
+            $(this).parent().slideUp(1500);
+            $(this).parent().prev().children(".showImage").removeClass("disabledLink");
+        });
+
+          $(".changeVisibilityList").click(function(){
+            $(this).parent().slideUp(1500);
+            $(this).parent().prev().children(".showList").removeClass("disabledLink");
+        });
+        
+});
+</script>

@@ -1,0 +1,83 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-md-9">
+            <div class="panel panel-primary">
+                <div class="panel-heading"><h2>Как рассчитывается % бонуса в ИЗ</h2></div>
+                <div class="panel-body">
+                    <p>Каждому сотруднику на ежемесячной основе выставляется индивидуальное задание (ИЗ),  результаты выполнения которого отображаются в СКиП.</p>
+                    <p>ИЗ состоит из нескольких целей, каждая из которых имеет определенный вес (общий вес целей должен быть равен <b>100%</b>).</p>
+                    <p>По результатам % выполнения целей рассчитывается % премии по тренду, исходя из которого рассчитывается % бонуса за месяц <span class="showImage">(Показать)</span>:</p>
+                    <div class="thumb non-visible">
+                      <a class="fancyimage" href="images/3.6.3.0.jpg">
+                       <img class="img-responsive" src="images/3.6.3.0.jpg" style="width: 50%;margin: auto;">
+                      </a>
+                      <button type="button" class="btn btn-primary btn-md changeVisibility">Скрыть</button>
+                    </div>
+		    <p>% бонуса к начислению рассчитывается <b>по формуле:</b></p>
+                    <p class="formula">% бонуса для М1 = % премии по тренду * Вес цели</p>
+                    <p>Пример расчета бонуса М1 согласно выполнения  ИЗ в СКиП <span class="showImage">(Показать)</span>:</p>
+                    <div class="thumb non-visible">
+                      <a class="fancyimage" href="images/3.6.3.1.jpg">
+                       <img class="img-responsive" src="images/3.6.3.1.jpg" style="width: 50%;margin: auto;">
+                      </a>
+                      <button type="button" class="btn btn-primary btn-md changeVisibility">Скрыть</button>
+                    </div>
+                    <p>Если к сотруднику применен триггер <a class="linkStyle" href="#skip_6_7">(cм. здесь)</a> % бонуса М1 рассчитывается: 
+<span class="showImage">(Показать)</span>:</p>
+                    <div class="thumb non-visible">
+                      <a class="fancyimage" href="images/3.6.3.2.jpg">
+                       <img class="img-responsive" src="images/3.6.3.2.jpg" style="width: 50%;margin: auto;">
+                      </a>
+                      <button type="button" class="btn btn-primary btn-md changeVisibility">Скрыть</button>
+                    </div>
+                    <p>% бонуса для М2/М3 рассчитывается <b>по формуле:</b></p>
+                    <p class="formula">% бонуса для М2/М3  = % премии по тренду * Вес цели * 33% </p>
+                    <p> (максимальный бонус М2/М3  составляет 39,6% от оклада) </p>
+                    <p>Пример расчета бонуса М2 согласно выполнения  ИЗ в СКиП : <span class="showImage">(Показать)</span>:</p>
+                    <div class="thumb non-visible">
+                      <a class="fancyimage" href="images/3.6.3.3.jpg">
+                       <img class="img-responsive" src="images/3.6.3.3.jpg" style="width: 50%;margin: auto;">
+                      </a>
+                      <button type="button" class="btn btn-primary btn-md changeVisibility">Скрыть</button>
+                    </div>
+                    <p>Пример расчета бонуса М2 согласно выполнения  ИЗ в СКиП (с триггером <a class="linkStyle" href="#skip_6_7">(см. здесь)</a>) 
+<span class="showImage">(Показать)</span>: </p>
+                    <div class="thumb non-visible">
+                      <a class="fancyimage" href="images/3.6.3.4.jpg">
+                       <img class="img-responsive" src="images/3.6.3.4.jpg" style="width: 50%;margin: auto;">
+                      </a>
+                      <button type="button" class="btn btn-primary btn-md changeVisibility">Скрыть</button>
+                    </div>
+                    <p>Для М1 KAS % бонуса рассчитывается <b>по формуле: </b></p>
+                    <p class="formula">% бонуса для М1 KAS = % премии по тренду * Вес цели * 70%</p>
+                    <a href="#skip_6_3" class="btn btn-success btn-md" role="button" id="top">Bверх</a>
+                </div>
+                <div class="panel-footer">
+                    <h3>Ответственный: <span>SSDS Team</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  $(document).ready(function() {
+
+        $("a.fancyimage").fancybox();
+        var toTop = document.getElementById("top");
+        toTop.addEventListener("click", function(){
+            window.scrollTo(0,0);
+        }); 
+        
+        $(".showImage").click(function(){
+            var spanEl = $(this).parent().next();
+            spanEl.slideDown(1500)
+            $(this).addClass("disabledLink");
+        });
+        
+        $(".changeVisibility").click(function(){
+            $(this).parent().slideUp(1500);
+            $(this).parent().prev().children(".showImage").removeClass("disabledLink");
+        });
+        
+});
+</script>

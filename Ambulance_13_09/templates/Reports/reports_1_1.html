@@ -1,0 +1,71 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-md-9">
+            <div class="panel panel-primary">
+                <div class="panel-heading"><h2>Блок-фактор на бонус</h2></div>
+                <div class="panel-body">
+                    <p>По итогам выполнения календаря полевых  активностей за месяц  на бонус для сотрудников отдела
+                        продаж применяется <b>блок – фактор.</b>
+                    </p>
+                    <p>Если М2-М3  в течении месяца не выполнил KPIs по полевым активностям  - бонус за месяц обнуляется.</p>
+                    <p>Блок  фактор - состоит из трех условий <span class="showList">(Показать):</span></p>
+                    <div class="non-visible">
+                        <ul class="answer">
+                            <li><b>Количество</b> - промониторенных  запланированных активностей - не должно быть меньше
+                                95% за месяц;</li>
+                            <li><b>Качество</b> – минимальное количество промониторенных тт от планового количества
+                                точек должно составлять не менее 80%;
+                            </li>
+                            <li><b>GPS</b> – совпадение базовых координат с координатами визита не менее 80 %</li>
+                            <div class="thumb">
+                                <a class="fancyimage" href="images/8.1.1.0.jpg">
+                                    <img class="img-responsive" src="images/8.1.1.0.jpg" style="width: 50%;margin: auto;">
+                                </a>
+                            </div>
+                        </ul>
+                        <button type="button" class="btn btn-primary btn-md changeVisibility">Скрыть</button>
+                    </div>
+                    <p> Данные по блок фактору отображены в отчете «По полевым активностям» </p>
+                    <p> Входящие  данные для отчета <span class="showList">(Показать):</span></p>
+                    <div class="non-visible">
+                        <ul class="answer">
+                            <li>выгрузки анкет из Скипа;</li>
+                            <li>выгрузки анкет из Google docs;</li>
+                            <li>календарь активностей команды продаж;</li>
+                            <li>табель УРВ;</li>
+                            <li>итоговый отчет по «Полевому обучению»;</li>
+                            <li>сводный файл согласований замены Полевых активностей, от РБДМа;</li>
+                        </ul>
+                        <button type="button" class="btn btn-primary btn-md changeVisibility">Скрыть</button>
+                    </div>
+                    <a href="#reports_1_1" class="btn btn-success btn-md" role="button" id="top">Bверх</a>
+                </div>
+                <div class="panel-footer">
+                    <h3>Ответственный: <span>SSDS Team</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+
+        $("a.fancyimage").fancybox();
+        var toTop = document.getElementById("top");
+        toTop.addEventListener("click", function(){
+            window.scrollTo(0,0);
+        });
+
+        $(".showList").click(function(){
+            var spanEl = $(this).parent().next();
+            spanEl.slideDown(1500)
+            $(this).addClass("disabledLink");
+        });
+
+        $(".changeVisibility").click(function(){
+            $(this).parent().slideUp(1500);
+            $(this).parent().prev().children(".showList").removeClass("disabledLink");
+        });
+
+    });
+</script>
