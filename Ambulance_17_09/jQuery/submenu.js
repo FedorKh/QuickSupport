@@ -52,7 +52,10 @@
         });
 
        $(window).resize(function(){
-            location.reload();
+           var changeWidth;
+           if((changeWidth>w)||((changeWidth<w)){
+                   location.reload();
+           }
         });
     });
 })(jQuery);
