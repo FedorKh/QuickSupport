@@ -51,11 +51,11 @@
 
         });
 
-       $(window).resize(function(){
+       /*$(window).resize(function(){
            var changeWidth;
            if((changeWidth>w)||((changeWidth<w)){
                    location.reload();
            }
-        });
+        });*/
     });
 })(jQuery);
