@@ -99,12 +99,20 @@ table, th, td {
 }
 
 th {
-    background-color: #00FFFF;
+    background-color: #FF6347;
 }
 
-tr:nth-child(even) {
-    background-color: #00FF7F;
+.tableLeft {
+    background-color: #E9967A;
 }
+
+.tableRight {
+    background-color: #FFE4E1;
+}
+
+/*tr:nth-child(even) {
+    background-color: #00FF7F;
+}*/
 
 .answerPlum, .answer {
     list-style-type: circle;
