@@ -257,7 +257,7 @@ tr:nth-child(even) {
 }
 
 @media screen and (min-width: 761px) {
-    .dropdown-menu {
+    .dropdown-menu>li>a {
         color: black !important;
     }
 }
