@@ -1,0 +1,1 @@
+.navbar-offcanvas .dropdown.active .caret{border-top:0;border-bottom:4px solid} - стрелка navbar mobile

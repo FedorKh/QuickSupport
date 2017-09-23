@@ -1,0 +1,78 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-md-9">
+            <div class="panel panel-primary">
+                <div class="panel-heading"><h2>Правила заполнения и предоставления информации по ротации</h2></div>
+                <div class="panel-body">
+                    <p> На ежемесячной основе сотрудник БСЦ отправляет запрос с файлом по Ротации персонала отчетного периода на регион.</p>
+                    <p> Высланный файл по Ротации персонала отчетного месяца необходимо сохранить себе в документы.</p>
+                    <p> Отфильтроваться по своему дивизиону/территории, проверить информацию на актуальность работающего персонала на 
+дату приема сотрудников. </p>
+                    <p> <b>Инструкция по заполнению: </b><span class="showList">(Показать) </span></p>
+                     <div class="non-visible">
+                      <ul class="answer">
+                       <li> при ротации на секторе в предыдущем месяце и если в отчетный период на секторе никто не работает, необходимо прописать в 
+столбце «ФИО сотрудника» - Вакансия ;</li>
+                       <li> При увольнении сотрудника на секторе по причинам -  <b>«Увольнение по инициативе сотрудника», «Увольнение по инициативе компании»  
+в столбце – «Подробный список причин»</b> обязательно необходимо выбрать подробную причину соответствующую каждой причине увольнения:<span class="showImage">(Показать/Скрыть)</span>
+		         <div class="thumb non-visible">
+                          <a class="fancyimage" data-fancybox-group="group" href="images/8.6.1.1.JPG">
+                           <img class="img-responsive" src="images/8.6.1.1.JPG" style="width: 50%;margin: auto;">
+                          </a>
+                          <a class="fancyimage" data-fancybox-group="group" href="images/8.6.1.2.JPG">
+                           <img class="img-responsive" src="images/8.6.1.2.JPG" style="width: 50%;margin: auto;">
+                          </a>
+                          </div>        
+                     </li>
+                      <li> cектора, где в отчетный период была ротация персонала – перевод/увольнение и в этом же месяце найм  нового сотрудника, 
+необходимо скопировать и вставить строкой ниже. В первой строке указываем дату увольнения сотрудника, причину увольнения, если необходимо - подробную причину. 
+Во второй строке по этому же сектору указываем новое ФИО, дату приема сотрудника и месяц последнего изменения по обоим строкам  :<span class="showImage">(Показать/Скрыть)</span>
+		        <div class="thumb non-visible">
+                          <a class="fancyimage" href="images/8.6.1.3.JPG">
+                           <img class="img-responsive" src="images/8.6.1.3.JPG" style="width: 50%;margin: auto;">
+                          </a>
+                          </div>  
+                     </li>
+                      <li> cектора по которым произошла ротация персонала выделяем «желтым» цветом ;</li>
+                      <li> после вышеперечисленных процедур, еще раз проверяем файл на корректность заполнения, сохраняем и отправляем ответственному с
+пециалисту БСЦ по региону;</li>
+                     </ul>
+		      <button type="button" class="btn btn-primary btn-md changeVisibilityList">Скрыть</button>            
+                    </div>
+                    <a href="#reports_6_1" class="btn btn-success btn-md" role="button" id="top">Bверх</a>
+                </div>
+                <div class="panel-footer">
+                    <h3>Ответственный: <span>SSDS Team</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+
+        $("a.fancyimage").fancybox();
+        var toTop = document.getElementById("top");
+        toTop.addEventListener("click", function(){
+            window.scrollTo(0,0);
+        });
+
+        $(".showImage").click(function(){
+            var spanEl = $(this).next();
+            spanEl.slideToggle(1500)
+        });
+
+        $(".showList").click(function(){
+            var spanEl = $(this).parent().next();
+            spanEl.slideDown(1500)
+            $(this).addClass("disabledLink");
+        });
+
+        $(".changeVisibilityList").click(function(){
+            $(this).parent().slideUp(1500);
+            $(this).parent().prev().children(".showList").removeClass("disabledLink");
+        });
+
+
+    });
+</script>
