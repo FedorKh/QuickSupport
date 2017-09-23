@@ -24,8 +24,12 @@
             .when("/cubes_3_3", {
                 templateUrl: "templates/Cubes/cubes_3_3.html"
             })
-
-
+            .when("/sw_13_1", {
+                templateUrl: "templates/SalesWorks/sw_13_1.html"
+            })
+            .when("/sw_13_3", {
+                templateUrl: "templates/SalesWorks/sw_13_3.html"
+            })
             .when("/sw_14_1", {
                 templateUrl: "templates/SalesWorks/sw_14_1.html"
             })
