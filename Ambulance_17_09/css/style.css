@@ -1,3 +1,13 @@
+.panel {
+    border: 2px solid #FF6347; 
+}
+
+.panel .panel-heading {
+    background-color: #FF6347 !important;
+    color: black;
+    font-weight: bold;
+}
+
 .navbarTop {
     margin-top: 0;
 }
@@ -89,27 +99,29 @@ table, th, td {
 }
 
 th {
-    background-color: #00FFFF;
+    background-color: #FF6347;
 }
 
-tr:nth-child(even) {
+.tableLeft {
+    background-color: #E9967A;
+}
+
+.tableRight {
+    background-color: #FFD700;
+}
+
+/*tr:nth-child(even) {
     background-color: #00FF7F;
-}
+}*/
 
-.answerPlum {
+.answerPlum, .answer {
     list-style-type: circle;
-    background: #EE82EE;
-    padding: 20px;
-}
-
-.answer {
-    list-style-type: circle;
-    background: #3399ff;
+    background: #FF8C00;
     padding: 20px;
 }
 
 .answer li, .answerPlum li {
-    background: #cce5ff;
+    background: #FFDEAD;
     margin: 5px;
 }
 
@@ -244,4 +256,10 @@ tr:nth-child(even) {
         background-color: rgba(0,0,0,0);
     }
 
+}
+
+@media screen and (min-width: 761px) {
+    .dropdown-menu>li>a {
+        color: black !important;
+    }
 }
