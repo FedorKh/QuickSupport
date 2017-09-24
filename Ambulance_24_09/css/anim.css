@@ -1,0 +1,6 @@
+@keyframes changeColor {
+    0%   {background-color: #DC143C;}
+    25%  {background-color: #FF0000;}
+    50%  {background-color: #B22222;}
+    100% {background-color: #8B0000;}
+}

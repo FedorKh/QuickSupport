@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-md-9">
+            <div class="panel panel-primary">
+                <div class="panel-heading"><h2>Не сходится кол-во эффективных плановых визитов в ТТ с ТТ с заказами</h2></div>
+                <div class="panel-body">
+                    <p>Проверить все ТТ стоят по плану на маршруте
+                        <span class="showImage">(Показать)</span>:</p>
+                    <div class="thumb non-visible">
+                        <a class="fancyimage" href="images/8.14.3.jpg">
+                            <img class="img-responsive" src="images/8.14.3.jpg" style="width: 50%;margin: auto;">
+                        </a>
+                        <button type="button" class="btn btn-primary btn-md changeVisibility">Скрыть</button>
+                        <a href="#reports_14_3" class="btn btn-success btn-md" role="button" id="top">Bверх</a>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <h3>Ответственный: <span>Sales Analyst</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+
+        $("a.fancyimage").fancybox();
+        var toTop = document.getElementById("top");
+        toTop.addEventListener("click", function(){
+            window.scrollTo(0,0);
+        });
+
+        $(".showImage").click(function(){
+            var spanEl = $(this).parent().next();
+            spanEl.slideDown(1500)
+            $(this).addClass("disabledLink");
+        });
+
+        $(".changeVisibility").click(function(){
+            $(this).parent().slideUp(1500);
+            $(this).parent().prev().children(".showImage").removeClass("disabledLink");
+        });
+
+    });
+</script>

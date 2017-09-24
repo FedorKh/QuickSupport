@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambulance</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="boottrap-offcanvas/css/bootstrap.offcanvas.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="boottrap-offcanvas/js/bootstrap.offcanvas.min.js"></script>
+
+    <!--Styles for gallery-->
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen"> 
+
+    <!--Script for gallery-->
+    <script src="fancybox/jquery.fancybox.pack.js"></script>
+
+    <script src="jQuery/menu.js"></script>
+
+    <script src="jQuery/submenu.js"></script>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Anim-->
+    <link rel="stylesheet" href="css/anim.css">
+
+    <!--Angular library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+    <!--Angular Routes-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+    <!--Angular Module-->
+    <script src="js/app.js"></script>
+
+    <!--Angular Route Settings-->
+    <script src="js/config.js"></script>
+
+</head>
+<body ng-app="app" style="background: url('images/main_bg.jpg');background-size: cover;">
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+
+
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas" data-target="#navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/">Скорая помощь</a>
+        </div>
+       <div class="navbar-offcanvas navbar-offcanvas-touch" id="navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown main-list"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SalesWorks<b class="caret"></b></a>
+                    <ul class="dropdown-menu sublist">
+                        <li><a href="#">Поклейка и сканирование QR-кодов</a></li>
+                        <li><a href="#">При сканировании QR кода пишется код, но не прописывается ХО. И напротив значка QR-кода стоит "-"</a></li>
+                        <li><a href="#">Заявки на ремонт ХО не выгружаются к провайдеру</a></li>
+                        <li><a href="#">Не проходит синхронизация SWE, зависает на 70%</a></li>
+                        <li><a href="#">При синхронизации выдёт ошибку "-8"</a></li>
+                        <li><a href="#">Не могу обновить SWE последней версии</a></li>
+                        <li><a href="#">GPS не включается, после синхронизации пропадают записанные данные</a></li>
+                        <li><a href="#">На вкладке "Оборудование" задваиваются-затраиваются холодильники</a></li>
+                        <li><a href="#">Не могу подтвердить заявку на ремонт</a></li>
+                        <li><a href="#">Не могу сделать заказ на необходимый склад, его нет в выпадачке</a></li>
+                        <li><a href="#">Вылетает из приложения SWE</a></li>
+                        <li><a href="#">Нет возможности выбрать необходимый склад, при ремонте\демонтаже ХО.</a></li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Продукты</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#sw_13_1">Не отображается продукт в планшете</a></li>
+                                <li><a href="#">Добавить\удалить новый продукт</a></li>
+                                <li><a href="#sw_13_3">Цена на продукт</a></li>
+                                <li><a href="#">Промо календарь</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Заказы</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#sw_14_1">Не уехал заказ</a></li>
+                                <li><a href="#">График выгрузки заказов</a></li>
+                                <li><a href="#">Корректировка заказа</a></li>
+                                <li><a href="#sw_14_4">Проблемы с заведением заказа</a></li>
+                                <li><a href="#sw_14_5">Сломался планшет(набить заказ)</a></li>
+                                <li><a href="#">Проверка синхронизации</a></li>
+                                <li><a href="#sw_14_7">Дополнительная/повторная выгрузка заказов</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Контракты OFF</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#">Точка подключенная к контракту не отображается в КПК</a></li>
+                                <li><a href="#">Целевое значение не корректно</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Контрактные условия КА</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#">Точка с КУ не отображается в КПК</a></li>
+                                <li><a href="#">КУ в КПК не корректны</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Контрактные условия КА</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#">Заявки по ремонту ХО</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown main-list"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Отчетность<b class="caret"></b></a>
+                    <ul class="dropdown-menu sublist">
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Отчет по выполнению полевых активностей</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#">Входящие данные для отчета</a></li>
+                                <li><a href="#">Методология расчета KPI</a></li>
+                                <li><a href="#reports_1_1">Блок-фактор на бонус</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">SEP индикаторы</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#">Входящие данные для отчета</a></li>
+                                <li><a href="#">Методология расчета индикаторов</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Отчет по достижению целей</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#">Как рассчитывается % девиации</a></li>
+                                <li><a href="#">В чем различие между % бонуса и % выполнения цели</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">TopSeller</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#">Методология рассчета каждого KPI, источники данных</a></li>
+                                <li><a href="#">Как расчитываются баллы по выполнению</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Табель УРВ по АП</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#">Условные обозначения</a></li>
+                                <li><a href="#">Работа в праздники и выходные</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Отчет по ротации</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#reports_6_1" class="pull">Правила заполнения и предоставления информации по ротации</a></li>
+                                <li><a href="#reports_6_2">Если на секторе есть больничный/декрет, отобрать ли это?</a></li>
+                                <li><a href="#reports_6_3">Если человек перешел с сектора на сектор, какую дату приема сотрудника указывать?</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Расчет компенсаций по АП</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#">Компенсация согласоно табеля УРВ (кол-во дней, отпуск, больничный)</a></li>
+                                <li><a href="#">Нет бонуса, а в СКиП ИЗ выполнено</a></li>
+                                <li><a href="#">Если на секторе работалр 2 сотрудника</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Отчёт "Полевое обучение"</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#">Отсутствует дата обучения в отчёте</a></li>
+                                <li><a href="#">Как своевременно отобразить переименования секторов и м1 в отчёте</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Отчёт "POCEx"</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#">Нет аудитов в отчёте</a></li>
+                                <li><a href="#">Могу ли я получить доступ в Google Docs</a></li>
+                                <li><a href="#">Нет данных по совместному аудиту</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Отчёт по покрытию замерами POCEx М2/М3 маршрутами М1</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#">Методология расчётов покрытия маршрутов М1</a></li>
+                                <li><a href="#">Некорректная оргструктура</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Сайт провайдера "Frigoglass"</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#">Внесение заявок на сайт провайдера</a></li>
+                                <li><a href="#">Нет заявки на сайте провайдера</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Run Rate</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#reports_12_1">Почему не бьется АКБ в отчете и Кубах</a></li>
+                                <li><a href="#reports_12_2">Не все обьемы попали в Отчет</a></li>
+                                <li><a href="#reports_12_3">Не работает ссылка на ресурс к отчету</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">DSR Secondary</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#reports_13_1">Обьем продаж больше в отчете</a></li>
+                                <li><a href="#reports_13_2">Не работает ссылка на ресурс к отчету</a></li>
+                                <li><a href="#reports_13_3">Почему план/факт по КА в отчете меньше чем данные Кубов или СКИП</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Strike Rate</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#reports_14_1">Методология расчета KPI фактический страйк</a></li>
+                                <li><a href="#reports_14_2">Методология расчета KPI плановый страйк</a></li>
+                                <li><a href="#reports_14_3">Не сходится кол-во эффективных плановых визитов в ТТ с ТТ с заказами</a></li>
+                                <li><a href="#reports_14_4">Не работает ссылка на ресурс к отчету</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Sales Efficiency</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#">Причины невыполнения</a></li>
+                                <li><a href="#">Причины невыполнения</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">RU_POC KA</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#">Почему не выполняются условия закрытие бонуса сотрудника</a></li>
+                                <li><a href="#">Почему не выполняются условие по уникально промониторынным ТТ в текущем месяце</a></li>
+                                <li><a href="#">Почему не выполняются условия по наличию ДМП фокусных брендов</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown main-list"><a class="dropdown-toggle" data-toggle="dropdown" href="#">СКИП<b class="caret"></b></a>
+                    <ul class="dropdown-menu sublist">
+                        <li><a href="#">Не могу выставить планы для каскадирования</a></li>
+                        <li><a href="#">Не могу проставить планы на третичку при каскадировании</a></li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Некорректные значения фактов</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#">Источник формирования значений по KPI</a></li>
+                                <li><a href="#">Не обновились автофакты</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Некорректные плановые значения KPI</a></li>
+                        <li><a href="#">Некорртные веса целей</a></li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">ИЗ (Индивидуальное задание)</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#skip_6_1">Как посмотреть ИЗ свое и подчиненных</a></li>
+                                <li><a href="#">На что влияет выбор персонала M и M-1</a></li>
+                                <li><a href="#skip_6_3">Как рассчитывается % бонуса в ИЗ</a></li>
+                                <li><a href="#">Какие факты подтягиваются автоматически</a></li>
+                                <li><a href="#">Почему нет бонуса за KPI</a></li>
+                                <li><a href="#">Вопросы по матрице распределения задач в ИЗ (веса по KPI)</a></li>
+                                <li><a href="#skip_6_7">Что такое триггер и как он рассчитывается</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Календарь полевых активностей</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#skip_7_1">Как посмотреть запланированные активности</a></li>
+                                <li><a href="#">Как проверить выполнена ли активность в СКиП</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown main-list"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ТМ маркетинг<b class="caret"></b></a>
+                    <ul class="dropdown-menu sublist">
+                        <li><a href="#tm_1">Узнать логин и пароль для приложения М1ММ</a></li>
+                        <li><a href="#tm_2">На вкладке "Утреннее планирование" при выборе даты пишет ошибку "Нет записей на выбранную дату"</a></li>
+                        <li><a href="#tm_3">Не загружаются отчёты на вкладке "Дневные отчёты"</a></li>
+                        <li><a href="#">При отправке данных из УМ произошла ошибка</a></li>
+                        <li><a href="#">Не вижу планы своих подчинённых</a></li>
+                        <li><a href="#">Нет активности на сегодня</a></li>
+                        <li><a href="#">При инвентаризации - нет склада инвентаризации</a></li>
+                        <li><a href="#">Белый экран и приложение не отвечает</a></li>
+                        <li><a href="#">Заполнял активности, они пропали и в СКИП не пришли</a></li>
+                        <li><a href="#">Не сходятся планы\факты в СКИП и SWE</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown main-list"><a class="dropdown-toggle" data-toggle="dropdown" href="#">WCCP<b class="caret"></b></a>
+                    <ul class="dropdown-menu sublist">
+                        <li><a href="#">Предоставление доступа к отчётам</a></li>
+                        <li><a href="#">IPTR : точка не попала в IPTR, а мы продавали на неё 100 дал</a></li>
+                        <li><a href="#">Ежевизитная инвентаризация: как понять, ХО проинвентаризировали по QR код или нет ?</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown main-list"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Кубы<b class="caret"></b></a>
+                    <ul class="dropdown-menu sublist">
+                        <li><a href="#">Предоставление доступа к кубам</a></li>
+                        <li><a href="#">Не обновляются\висят кубы</a></li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Некорректный объем</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#cubes_3_1">Проблема с ТТ</a></li>
+                                <li><a href="#cubes_3_2">Проблема с продуктом</a></li>
+                                <li><a href="#cubes_3_3">Тех. проблема в инфообмене</a></li>
+                                <li><a href="#">Тех. проблема с серверами/SW</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown main-list"><a class="dropdown-toggle" data-toggle="dropdown" href="#">CPR<b class="caret"></b></a>
+                    <ul class="dropdown-menu sublist">
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Откуда берутся данные</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#cpr_6_1">Источники формирования вкладок</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Некорректные данные на вкладках</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#">Источники формирования вкладок</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!--li class="dropdown main-list"><a class="dropdown-toggle" data-toggle="dropdown" href="#">WDE<b class="caret"></b></a>
+                    <ul class="dropdown-menu sublist">
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Причины невыполнения</a>
+                            <ul class="dropdown-menu subsublist">
+                                <li><a href="#">Расшифровка KPI</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li-->
+            </ul>
+        </div>
+
+
+
+    </nav>
+
+    <ng-view></ng-view>
+
+</body>
+</html>
