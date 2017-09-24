@@ -101,6 +101,9 @@
             })
             .when("/reports_14_4", {
                 templateUrl: "templates/Reports/reports_14_4.html"
+            })
+             .when("/cpr_6_1", {
+                templateUrl: "templates/CPR/cpr_6_1.html"
             });
 
             //.otherwise({redirectTo: "/"});
