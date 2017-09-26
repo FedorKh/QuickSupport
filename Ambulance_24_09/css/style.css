@@ -256,7 +256,7 @@ th {
         background-color: rgba(0,0,0,0);
     }
 
-    html {
+    body {
         background: url("../images/main_bg.jpg") no-repeat center fixed !important;
         background-size: cover !important;
         -webkit-background-size: cover !important;
