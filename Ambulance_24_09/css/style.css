@@ -263,6 +263,9 @@ th {
         -moz-background-size: cover !important;
         -o-background-size: cover !important;
     }
+    .container {
+        height: 100%;
+    }
 
 }
 
