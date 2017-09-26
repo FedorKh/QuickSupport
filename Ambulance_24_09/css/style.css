@@ -265,8 +265,8 @@ th {
     }*/
     
     html { 
-    background: url("../images/main_bg.jpg") no-repeat center fixed; 
-    background-size: cover;
+    background: url("../images/main_bg.jpg") no-repeat center fixed !important; 
+    background-size: cover !important;
 }
       
 }
