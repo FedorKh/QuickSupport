@@ -259,7 +259,6 @@ th {
     body {
         background: url("../images/main_bg.jpg") center fixed no-repeat;
         background-size: cover;
-        height: 100%;
     }
 
 }
