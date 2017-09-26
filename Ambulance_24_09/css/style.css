@@ -257,8 +257,11 @@ th {
     }
 
     body {
-        background: url("../images/main_bg.jpg") center fixed no-repeat !important;
+        background: url("../images/main_bg.jpg") no-repeat center center fixed !important;
         background-size: cover !important;
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        -o-background-size: cover !important;
     }
 
 }
