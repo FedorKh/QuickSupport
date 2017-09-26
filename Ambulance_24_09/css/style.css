@@ -258,7 +258,7 @@ th {
 
     body {
         background: url("../images/main_bg.jpg") no-repeat;
-        background-size: cover !important;
+        background-size: contain;
         height: 100%;
     }
 
