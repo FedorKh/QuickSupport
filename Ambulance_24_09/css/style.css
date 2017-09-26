@@ -257,8 +257,8 @@ th {
     }
 
     body {
-        background: url("../images/main_bg.jpg") no-repeat;
-        background-size: contain;
+        background: url("../images/main_bg.jpg") center fixed no-repeat;
+        background-size: cover;
         height: 100%;
     }
 
