@@ -257,8 +257,8 @@ th {
     }
 
     body {
-        background: url("../images/main_bg.jpg") center fixed no-repeat;
-        background-size: cover;
+        background: url("../images/main_bg.jpg") center fixed no-repeat !important;
+        background-size: cover !important;
     }
 
 }
