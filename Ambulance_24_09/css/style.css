@@ -256,10 +256,10 @@ th {
         background-color: rgba(0,0,0,0);
     }
 
-    body {
+    /*body {
         background: url("../images/main_bg.jpg") no-repeat center fixed !important;
         background-size: cover !important;
-    }
+    }*/
 
 }
 
