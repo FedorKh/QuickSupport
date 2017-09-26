@@ -262,11 +262,9 @@ th {
         -webkit-background-size: cover !important;
         -moz-background-size: cover !important;
         -o-background-size: cover !important;
+        min-height: 100% !important;
     }
-    .container {
-        height: 100%;
-    }
-
+  
 }
 
 @media screen and (min-width: 761px) {
