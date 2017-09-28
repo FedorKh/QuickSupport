@@ -13,7 +13,12 @@
             })
             .when("/tm_3", {
                 templateUrl: "templates/TM/tm_3.html"
-
+            })
+               .when("/tm_4", {
+                templateUrl: "templates/TM/tm_4.html"
+            })
+            .when("/tm_5", {
+                templateUrl: "templates/TM/tm_5.html"
             })
             .when("/cubes_3_1", {
                 templateUrl: "templates/Cubes/cubes_3_1.html"
