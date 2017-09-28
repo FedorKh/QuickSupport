@@ -20,8 +20,14 @@
             .when("/tm_5", {
                 templateUrl: "templates/TM/tm_5.html"
             })
-              .when("/tm_6", {
+            .when("/tm_6", {
                 templateUrl: "templates/TM/tm_6.html"
+            })
+            .when("/tm_7", {
+                templateUrl: "templates/TM/tm_7.html"
+            })
+            .when("/tm_8", {
+                templateUrl: "templates/TM/tm_8.html"
             })
             .when("/cubes_3_1", {
                 templateUrl: "templates/Cubes/cubes_3_1.html"
