@@ -29,7 +29,7 @@
         </div-->
     </div>
 </div>
-<script type="text/javascript">
+<script>
     $(document).ready(function() {
         $("a.fancyimage").fancybox();
         
@@ -38,8 +38,9 @@
         });
         
         $(".showImage").click(function(){
-            var spanEl = $(this).parent().css("border","2px solid red");//siblings(".non-visible:hidden");
-            spanEl.slideDown(1500);
+            var spanEl = $(this).parent();
+            spanEL.css("border","2px solid red");//siblings(".non-visible:hidden");
+            //spanEl.slideDown(1500);
             $(this).addClass("disabledLink");
         });
          
