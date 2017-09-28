@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-7 col-md-9">
+            <div class="panel panel-primary">
+                <div class="panel-heading"><h2>При инвентаризации в приложении М2А нет склада для инвентаризации</h2></div>
+                <div class="panel-body">
+                    <p>Необходимо сделать полную синхронизацию приложения М2А, нажав
+                        <b>«Синх-ть активности»</b> и <b>обязательно проверить, чтобы синхронизация прошла успешно (!).</b>
+                        После этого сделать <b>«Оптимизацию БД»</b> для того, чтобы в вашу МБД подтянулась вся актуальная
+                        информация по активности <b>«Складская инвентаризация»</b><span class="showImage">(Показать):</span>
+                    </p>
+                    <div class="thumb non-visible">
+                        <a class="fancyimage" href="images/1.7.1.jpg">
+                            <img class="img-responsive" src="images/1.7.1.jpg" style="width: 20%;margin: auto;">
+                        </a>
+                        <button type="button" class="btn btn-primary btn-md changeVisibility">Скрыть</button>
+                    </div>
+                    <p>В случае, если после полной синхронизации необходимый склад не появился, необходимо
+                        обратиться к ответственному специалисту отдела <b>Capex</b> по учёту коммерческого оборудования.</p>
+                    <a href="#tm_7" class="btn btn-success btn-md" role="button" id="top">Bверх</a>
+                </div>
+                <div class="panel-footer">
+                    <h3>Ответственный: <span>IS Experts</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        $("a.fancyimage").fancybox();
+        var toTop = document.getElementById("top");
+        toTop.addEventListener("click", function(){
+            window.scrollTo(0,0);
+        });
+        $(".showImage").click(function(){
+            var spanEl = $(this).parent().next();
+            spanEl.slideDown(1500)
+            $(this).addClass("disabledLink");
+        });
+
+        $(".changeVisibility").click(function(){
+            $(this).parent().slideUp(1500);
+            $(this).parent().prev().children(".showImage").removeClass("disabledLink");
+        });
+
+    });
+</script>
