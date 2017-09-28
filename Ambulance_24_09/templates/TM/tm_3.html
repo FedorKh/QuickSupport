@@ -8,13 +8,13 @@
                         было ошибок при загрузке отчётов.</p>
                     <p>При ошибке обязательно проверить наличие только одного источника интернета на планшете,
                         только «Передача данных» (мобильный интернет) или только «Wi-Fi». И необходимо проверить
-                        есть ли интернет на планшете<span class="showImage">(Показать):</span></p>
+                        есть ли интернет на планшете<span class="showImage">(Показать):</span>
                     <div class="thumb non-visible">
                                 <a class="fancyimage" href="images/images/daily_rep.jpg">
                                     <img class="img-responsive" src="images/daily_rep.jpg" style="width: 20%;margin: auto;">
                                 </a>
                                 <button type="button" class="btn btn-primary btn-md changeVisibility">Скрыть</button>
-                    </div>
+                    </div></p>
                     <a href="#tm_3" class="btn btn-success btn-md" role="button" id="top">Bверх</a>
                 </div>
                 <div class="panel-footer">
@@ -37,7 +37,7 @@
         });
         
         $(".showImage").click(function(){
-            var spanEl = $(this).parent().parent().find(".non-visible");
+            var spanEl = $(this).next();
             spanEl.slideDown(1500);
             $(this).addClass("disabledLink");
         });
