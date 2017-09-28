@@ -30,25 +30,23 @@
     </div>
 </div>
 <script>
-    $(document).ready(function() {
+  $(document).ready(function() {
         $("a.fancyimage").fancybox();
-        
+        var toTop = document.getElementById("top");
         toTop.addEventListener("click", function(){
             window.scrollTo(0,0);
         });
-        
-        $("span.showImage").click(function(){
+        $(".showImage").click(function(){
             alert("yes");
-            var spanEl = $(this).parent();
-            spanEL.css("border","2px solid red");//siblings(".non-visible:hidden");
-            //spanEl.slideDown(1500);
+            var spanEl = $(this).next();
+            spanEl.slideDown(1500)
             $(this).addClass("disabledLink");
         });
-         
+        
         $(".changeVisibility").click(function(){
             $(this).parent().slideUp(1500);
             $(this).parent().prev().removeClass("disabledLink");
         });
-
-    });
+        
+});
 </script>
