@@ -32,12 +32,13 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $("a.fancyimage").fancybox();
+        
         toTop.addEventListener("click", function(){
             window.scrollTo(0,0);
         });
         
         $(".showImage").click(function(){
-            var spanEl = $(this).next();
+            var spanEl = $(this).parent().next();
             spanEl.slideDown(1500);
             $(this).addClass("disabledLink");
         });
