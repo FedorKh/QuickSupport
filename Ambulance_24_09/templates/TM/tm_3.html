@@ -37,15 +37,14 @@
             window.scrollTo(0,0);
         });
         $(".showImage").click(function(){
-            alert("yes");
-            var spanEl = $(this).next();
+            var spanEl = $(this).parent().next();
             spanEl.slideDown(1500)
             $(this).addClass("disabledLink");
         });
         
         $(".changeVisibility").click(function(){
             $(this).parent().slideUp(1500);
-            $(this).parent().prev().removeClass("disabledLink");
+            $(this).parent().prev().children(".showImage").removeClass("disabledLink");
         });
         
 });
