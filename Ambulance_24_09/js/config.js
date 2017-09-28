@@ -20,6 +20,9 @@
             .when("/tm_5", {
                 templateUrl: "templates/TM/tm_5.html"
             })
+              .when("/tm_6", {
+                templateUrl: "templates/TM/tm_6.html"
+            })
             .when("/cubes_3_1", {
                 templateUrl: "templates/Cubes/cubes_3_1.html"
             })
