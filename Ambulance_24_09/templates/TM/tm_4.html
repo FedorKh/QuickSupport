@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-7 col-md-9">
+            <div class="panel panel-primary">
+                <div class="panel-heading"><h2>При отправке данных из УМ произошла ошибка</h2></div>
+                <div class="panel-body">
+                    <p>При данной ошибке необходимо проверить подключение планшета к интернету</p>
+                    <p>При повторном воспроизведении данной ошибки необходимо отправить мобильную базу данных из
+                        приложения М1_ММ на команду экспертов. Для этого необходимо нажать <b>«Отправить БД»</b>
+                        <span class="showImage">(Показать):</span></p>
+                    <div class="thumb non-visible">
+                        <a class="fancyimage" href="images/1.4.jpg">
+                            <img class="img-responsive" src="images/1.4.jpg" style="width: 20%;margin: auto;">
+                        </a>
+                        <button type="button" class="btn btn-primary btn-md changeVisibility">Скрыть</button>
+                    </div>
+                    <p>Выбрать почтовый сервер, который у Вас установлен на планшете. Письмо сгенерируется автоматически,
+                        адресату <a href="mailto: SWE_RU_EXPERTS@ab-inbev.com">SWE_RU_EXPERTS@ab-inbev.com</a>.
+                        В теле письма обязательно описать <b>суть проблемы</b> и указать
+                        <b>контактный номер телефона</b> для связи.</p>
+                    <a href="#tm_4" class="btn btn-success btn-md" role="button" id="top">Bверх</a>
+                </div>
+                <div class="panel-footer">
+                    <h3>Ответственный: <span>IS Experts</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        $("a.fancyimage").fancybox();
+        var toTop = document.getElementById("top");
+        toTop.addEventListener("click", function(){
+            window.scrollTo(0,0);
+        });
+        $(".showImage").click(function(){
+            var spanEl = $(this).parent().next();
+            spanEl.slideDown(1500)
+            $(this).addClass("disabledLink");
+        });
+
+        $(".changeVisibility").click(function(){
+            $(this).parent().slideUp(1500);
+            $(this).parent().prev().children(".showImage").removeClass("disabledLink");
+        });
+
+    });
+</script>
