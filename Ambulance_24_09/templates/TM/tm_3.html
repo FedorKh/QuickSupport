@@ -38,7 +38,7 @@
         });
         
         $(".showImage").click(function(){
-            var spanEl = $(this).parent().siblings("div:hidden");
+            var spanEl = $(this).parent().css("border","2px solid red");//siblings(".non-visible:hidden");
             spanEl.slideDown(1500);
             $(this).addClass("disabledLink");
         });
