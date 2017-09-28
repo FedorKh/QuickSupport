@@ -6,24 +6,46 @@
                 <div class="panel-body">
                     <p>Необходимо повторно нажать «Загрузить дневные отчёты» и проверить лог загрузки, что бы не
                         было ошибок при загрузке отчётов.</p>
-                    <p>При ошибка, обязательно, проверить наличие только одного источника интернета на планшете,
+                    <p>При ошибке обязательно проверить наличие только одного источника интернета на планшете,
                         только «Передача данных» (мобильный интернет) или только «Wi-Fi». И необходимо проверить
-                        есть ли интернет на планшете.</p>
+                        есть ли интернет на планшете.<span class="showImage">(Показать):</span></p>
+                    <div class="thumb non-visible">
+                                <a class="fancyimage" href="images/images/daily_rep.jpg">
+                                    <img class="img-responsive" src="images/daily_rep.jpg" style="width: 10%;margin: auto;">
+                                </a>
+                                <button type="button" class="btn btn-primary btn-md changeVisibility">Скрыть</button>
+                    </div>
+                    <a href="#tm_3" class="btn btn-success btn-md" role="button" id="top">Bверх</a>
                 </div>
                 <div class="panel-footer">
                     <h3>Ответственный: <span>IS Experts</span></h3>
                 </div>
             </div>
         </div>
-        <div class="col-sm-1 col-md-3 thumb">
+        <!--div class="col-sm-1 col-md-3 thumb">
             <a class="fancyimage" data-fancybox-group="group" href="images/daily_rep.jpg">
                 <img class="img-responsive" src="images/daily_rep.jpg" />
             </a>
-        </div>
+        </div-->
     </div>
 </div>
 <script type="text/javascript">
     $(document).ready(function() {
         $("a.fancyimage").fancybox();
+        toTop.addEventListener("click", function(){
+            window.scrollTo(0,0);
+        });
+        
+        $(".showImage").click(function(){
+            var spanEl = $(this).parent().next();
+            spanEl.slideDown(1500);
+            $(this).addClass("disabledLink");
+        });
+         
+        $(".changeVisibility").click(function(){
+            $(this).parent().slideUp(1500);
+            $(this).parent().prev().children(".showImage").removeClass("disabledLink");
+        });
+
     });
 </script>
