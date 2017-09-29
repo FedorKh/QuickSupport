@@ -1,7 +1,6 @@
 
 $(document).ready(function(){
     
-    alert($(".navbar-nav").css("background-color"));
     $(".navbar-brand").css({"background-color":"red","color":"white"});
     //$(".dropdown-menu a").css("color","rgb(0,255,0)");
 
@@ -18,7 +17,7 @@ $(document).ready(function(){
 
     $(".dropdown-menu a").hover(function(){
         
-        $(this).css({"background-color":"#FFEFD5"});
+        //$(this).css({"background-color":"#FFEFD5"});
     },function(){
        $(this).css({"background-color":"rgba(0,0,0,0)","color":"black"});
     });
