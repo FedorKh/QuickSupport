@@ -9,7 +9,7 @@ $(document).ready(function(){
        $("ul.navbar-nav>li").not(this).removeClass("active");
        $(".navbar-brand").css({"background-color":"transparent","color":"rgb(157, 157, 157)"});
     });
-
+    
     $(".navbar-brand").click(function(){
         $(this).css({"background-color":"red","color":"white"});
         $("ul.navbar-nav>li").removeClass("active");
