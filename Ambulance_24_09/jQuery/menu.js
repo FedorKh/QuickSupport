@@ -19,6 +19,6 @@ $(document).ready(function(){
         //alert($(".dropdown-menu a").css("background-color"));
         $(this).css({"background-color":"#FFA07A","color": "white"});
     },function(){
-       $(this).css({"background-color":"rgba(0,0,0,0)","color":"rgb(0,255,0)"});
+       $(this).css({"background-color":"rgba(0,0,0,0)","color":"black"});
     });
 });
