@@ -255,6 +255,10 @@ th {
     .dropdown-menu {
         background-color: rgba(0,0,0,0);
     }
+    
+    .dropdown-menu a {
+        color: rgb(0,255,0);
+    }
 
     /*body {
         background: url("../images/main_bg.jpg") no-repeat center fixed !important;
