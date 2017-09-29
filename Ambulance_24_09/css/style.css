@@ -273,6 +273,6 @@ th {
 
 @media screen and (min-width: 761px) {
     .dropdown-menu>li>a {
-        color: black !important;
+        color: black;
     }
 }
