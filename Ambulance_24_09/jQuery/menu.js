@@ -2,7 +2,7 @@
 $(document).ready(function(){
 
     $(".navbar-brand").css({"background-color":"red","color":"white"});
-    $(".dropdown-menu a").css("color","rgb(0,255,0)");
+    //$(".dropdown-menu a").css("color","rgb(0,255,0)");
 
     $("ul.navbar-nav>li").click(function(){
        $(this).addClass("active");
