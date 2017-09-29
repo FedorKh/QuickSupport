@@ -287,6 +287,6 @@ th {
 @media screen and (min-width: 761px) {
     .dropdown-menu>li>a {
         color: #9d9d9d !important;
-        font-size: 14px;
+        font-size: 14px !important;;
     }
 }
