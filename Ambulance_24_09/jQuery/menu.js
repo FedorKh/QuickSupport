@@ -17,7 +17,7 @@ $(document).ready(function(){
 
     $(".dropdown-menu a").hover(function(){
         //alert($(".dropdown-menu a").css("background-color"));
-        $(this).css({"background-color":"#FFA07A","color": "white"});
+        $(this).css("background-color":"#FFA07A");
     },function(){
        $(this).css({"background-color":"rgba(0,0,0,0)","color":"black"});
     });
