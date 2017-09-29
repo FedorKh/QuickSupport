@@ -13,7 +13,7 @@ $(document).ready(function(){
     $(".navbar-brand").click(function(){
         $(this).css({"background-color":"red","color":"white"});
         $("ul.navbar-nav>li").removeClass("active");
-    })
+    });
 
     $(".dropdown-menu a").hover(function(){
         //alert($(".dropdown-menu a").css("background-color"));
