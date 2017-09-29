@@ -264,9 +264,9 @@ th {
         -o-background-size: cover !important;
     }*/
     
-    html { 
+    /*html { 
     background: url("../images/main_bg.jpg") no-repeat center fixed !important; 
-    background-size: cover !important;
+    background-size: cover !important;*/
 }
       
 }
