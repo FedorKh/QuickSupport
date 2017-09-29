@@ -292,6 +292,6 @@ th {
     }
     
     .dropdown-menu a:hover {
-        background-color: white !important;
+        color: white !important;
     }
 }
