@@ -290,4 +290,8 @@ th {
         font-size: 14px !important;
         background-color: black !important;
     }
+    
+    .dropdown-menu a:hover {
+        background-color: white !important;
+    }
 }
