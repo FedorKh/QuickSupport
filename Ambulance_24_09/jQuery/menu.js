@@ -20,7 +20,7 @@ $(document).ready(function(){
 
     $(".dropdown-menu a").hover(function(){
         
-        $(this).css({"background-color":"#FF7F50"});
+        $(this).css({"background-color":"#FFEFD5"});
     },function(){
        $(this).css({"background-color":"rgba(0,0,0,0)","color":"black"});
     });
