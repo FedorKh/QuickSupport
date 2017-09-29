@@ -259,6 +259,11 @@ th {
     .dropdown-menu a {
         color: rgb(0,255,0) !important;
     }
+    
+     .dropdown-menu a:hover {
+        color: red !important;
+        background-color: white !important;
+    }
 
     /*body {
         background: url("../images/main_bg.jpg") no-repeat center fixed !important;
