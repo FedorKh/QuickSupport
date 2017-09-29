@@ -261,8 +261,8 @@ th {
     }
     
      .dropdown-menu a:hover {
-        color: red !important;
-        background-color: white !important;
+        color: white !important;
+        background-color: red !important;
     }
 
     /*body {
