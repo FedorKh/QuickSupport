@@ -45,7 +45,7 @@
 }
 
 .dropdown-submenu:hover>a:after {
-    border-left-color: #555;
+    border-left-color: white;
 }
 
 .dropdown-submenu.pull-left {
