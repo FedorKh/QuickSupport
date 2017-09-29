@@ -1,9 +1,7 @@
 
 $(document).ready(function(){
     
-    alert($(".main-list").css("font-color"));
-    alert($(".main-list").css("font-size"));
-
+    alert($(".navbar-nav").css("background-color"));
     $(".navbar-brand").css({"background-color":"red","color":"white"});
     //$(".dropdown-menu a").css("color","rgb(0,255,0)");
 
