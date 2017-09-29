@@ -291,6 +291,11 @@ th {
         background-color: black !important;
     }
     
+    .dropdown-menu {
+        background-color: black !important;
+    }
+    
+    
     .dropdown-menu a:hover {
         color: white !important;
     }
