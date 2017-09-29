@@ -257,7 +257,7 @@ th {
     }
     
     .dropdown-menu a {
-        color: rgb(0,255,0);
+        color: rgb(0,255,0) !important;
     }
 
     /*body {
