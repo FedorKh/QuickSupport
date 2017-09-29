@@ -268,7 +268,15 @@ th {
         color: white !important;
         background-color: red !important;
     }
-
+    
+    body {
+        background: url('images/SS_Gerb_ZCC_358x226.png');
+        background-position: left 60%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+                             
     /*body {
         background: url("../images/main_bg.jpg") no-repeat center fixed !important;
         background-size: cover !important;
