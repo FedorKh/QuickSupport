@@ -270,10 +270,10 @@ th {
     }
     
     body {
-        background: url('images/SS_Gerb_ZCC_358x226.png');
-        background-position: left 60%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        background: url('images/SS_Gerb_ZCC_358x226.png') !important;
+        background-position: left 60% !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
     }
     
                              
