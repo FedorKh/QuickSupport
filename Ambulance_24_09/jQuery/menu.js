@@ -1,7 +1,8 @@
 
 $(document).ready(function(){
     
- 
+    alert($(".main-list").css("font-color"));
+    alert($(".main-list").css("font-size"));
 
     $(".navbar-brand").css({"background-color":"red","color":"white"});
     //$(".dropdown-menu a").css("color","rgb(0,255,0)");
@@ -18,7 +19,7 @@ $(document).ready(function(){
     });
 
     $(".dropdown-menu a").hover(function(){
-        alert($(".drpdown-menu a").css("font-family"));
+        
         $(this).css({"background-color":"#FF7F50"});
     },function(){
        $(this).css({"background-color":"rgba(0,0,0,0)","color":"black"});
