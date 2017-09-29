@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     
-    alert($(".drpdown-menu a").css("font-family"));
+ 
 
     $(".navbar-brand").css({"background-color":"red","color":"white"});
     //$(".dropdown-menu a").css("color","rgb(0,255,0)");
@@ -18,7 +18,7 @@ $(document).ready(function(){
     });
 
     $(".dropdown-menu a").hover(function(){
-        //alert($(".dropdown-menu a").css("background-color"));
+        alert($(".drpdown-menu a").css("font-family"));
         $(this).css({"background-color":"#FF7F50"});
     },function(){
        $(this).css({"background-color":"rgba(0,0,0,0)","color":"black"});
