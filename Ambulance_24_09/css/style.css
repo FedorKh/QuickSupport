@@ -303,6 +303,7 @@ th {
 
 @media screen and (min-width: 0px) and (max-width: 199px) {
     body{
+        height: 100%;
         background: url("../images/SS_Gerb_ZCC_214x135.png") !important;
         background-position: left 150% !important;
         background-repeat: no-repeat !important;
@@ -313,6 +314,7 @@ th {
 
 @media screen and (min-width: 200px) and (max-width: 399px) {
     body{
+        height: 100%;
         background: url("../images/SS_Gerb_ZCC (8)_331x209.png") !important;
         background-position: left 150%  !important;
         background-repeat: no-repeat !important;
