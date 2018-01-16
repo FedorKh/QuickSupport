@@ -304,7 +304,7 @@ th {
 @media screen and (min-width: 0px) and (max-width: 199px) {
     body{
         background: url("../images/SS_Gerb_ZCC_214x135.png") !important;
-        background-position: left 90% !important;
+        background-position: left bottom !important;
         background-repeat: no-repeat !important;
         background-attachment: fixed !important;
     }
@@ -314,7 +314,7 @@ th {
 @media screen and (min-width: 200px) and (max-width: 399px) {
     body{
         background: url("../images/SS_Gerb_ZCC (8)_331x209.png") !important;
-        background-position: left 90% !important;
+        background-position: left bottom !important;
         background-repeat: no-repeat !important;
         background-attachment: fixed !important;
     }
@@ -324,7 +324,7 @@ th {
 @media screen and (min-width: 400px) and (max-width: 599px) {
     body{
         background: url("../images/SS_Gerb_ZCC (8)_331x209.png") !important;
-        background-position: left 90% !important;
+        background-position: left bottom !important;
         background-repeat: no-repeat !important;
         background-attachment: fixed !important;
     }
@@ -334,7 +334,7 @@ th {
 @media screen and (min-width: 600px) and (max-width: 799px) {
     body{
         background: url("../images/SS_Gerb_ZCC (7)_384x242.png") !important;
-        background-position: left 90% !important;
+        background-position: left bottom !important;
         background-repeat: no-repeat !important;
         background-attachment: fixed !important;
     }
@@ -344,7 +344,7 @@ th {
 @media screen and (min-width: 800px) and (max-width: 999px) {
     body{
         background: url("../images/SS_Gerb_ZCC (6)_434x274.png") !important;
-        background-position: left 90% !important;
+        background-position: left bottom !important;
         background-repeat: no-repeat !important;
         background-attachment: fixed !important;
     }
@@ -354,7 +354,7 @@ th {
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
     body{
         background: url("../images/SS_Gerb_ZCC (5)_499x315.png") !important;
-        background-position: left 90% !important;
+        background-position: left bottom !important;
         background-repeat: no-repeat !important;
         background-attachment: fixed !important;
     }
@@ -364,7 +364,7 @@ th {
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
     body{
         background: url("../images/SS_Gerb_ZCC (4)_564x356.png") !important;
-        background-position: left 90% !important;
+        background-position: left bottom !important;
         background-repeat: no-repeat !important;
         background-attachment: fixed !important;
     }
@@ -374,7 +374,7 @@ th {
 @media screen and (min-width: 1400px) and (max-width: 1599px) {
     body{
         background: url("../images/SS_Gerb_ZCC (3)_608x384.png") !important;
-        background-position: left 90% !important;
+        background-position: left bottom !important;
         background-repeat: no-repeat !important;
         background-attachment: fixed !important;
     }
@@ -384,7 +384,7 @@ th {
 @media screen and (min-width: 1600px) and (max-width: 1799px) {
     body{
         background: url("../images/SS_Gerb_ZCC (2)_652x411.png") !important;
-        background-position: left center !important;
+        background-position: left bottom !important;
         background-repeat: no-repeat !important;
         background-attachment: fixed !important;
     }
